@@ -4,10 +4,6 @@ var vars = {
 '3':0,
 '4':0
 };
-var var1 = 0;
-var var2 = 0;
-var var3 = 0;
-var var4 = 0;
 window.addEventListener("keydown", function e(){
  if (e.key == 76) {
   let loadSave = localStorage.getItem("testJSON")
@@ -17,7 +13,15 @@ window.addEventListener("keydown", function e(){
   const JSONsave = JSON.stringify(vars)
   localStorage.setItem("testJSON", JSONsave);
   alert('saved')
- } 
+ } else if (e.key == 49) {
+  vars[1] = vars[1] + 1;
+ } else if (e.key == 50) {
+  vars[2] = vars[2] + 1
+ } else if (e.key == 51) {
+  vars[3] = vars[3] + 1
+ } else if (e.key == 52) {
+  vars[4] = vars[4] + 1
+ }
 });
 function updateScrn() {
  document.getElementById('var1').innerHTML = vars[1]
