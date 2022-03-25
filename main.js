@@ -12,9 +12,11 @@ window.addEventListener("keydown", function e(){
  if (e.key == 76) {
   let loadSave = localStorage.getItem("testJSON")
   vars = JSON.parse(loadSave)
+  alert('loaded')
  } else if (e.key == 83) {
   const JSONsave = JSON.stringify(vars)
   localStorage.setItem("testJSON", JSONsave);
+  alert('saved')
  } 
 });
 function updateScrn() {
