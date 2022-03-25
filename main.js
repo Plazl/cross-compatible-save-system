@@ -17,3 +17,9 @@ window.addEventListener("keydown", function e(){
   localStorage.setItem("testJSON", JSONsave);
  } 
 });
+function updateScrn() {
+ document.getElementById('var1').innerHTML = vars[1]
+ document.getElementById('var2').innerHTML = vars[2]
+ document.getElementById('var3').innerHTML = vars[3]
+ document.getElementById('var4').innerHTML = vars[4]
+}
