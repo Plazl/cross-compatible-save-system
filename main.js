@@ -23,3 +23,4 @@ function updateScrn() {
  document.getElementById('var3').innerHTML = vars[3]
  document.getElementById('var4').innerHTML = vars[4]
 }
+setInterval(updateScrn, 50);
